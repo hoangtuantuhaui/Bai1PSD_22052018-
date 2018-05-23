@@ -1,4 +1,24 @@
-
+.circle {
+			width: 30px;
+			height: 30px;
+			background: #d2d2d2;
+			text-align: center;
+			padding: 5px;
+			color: #fff;
+			-moz-border-radius: 100px;
+			-webkit-border-radius: 100px;
+			border-radius: 100px;
+			position: relative;
+		}
+		.circle:hover{
+			background:#c30;
+			cursor: pointer;
+		}
+		.circle span{
+			position: absolute;
+			top: 20px;
+			right: 10px;
+		}
 
 
 body{
