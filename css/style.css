@@ -1,3 +1,6 @@
+/**{
+	box-sizing: border-box;
+}*/
 body{
 	width: 1000px;
 	margin:0px auto;
@@ -216,6 +219,9 @@ li{
 	margin-top: 0px;
 	
 }
+#title .box  p{
+	padding-left: 74px;
+}
 
 .box h3{
 	color: #97455f;
@@ -407,5 +413,15 @@ footer #footer-bottom span{
 
 
 /*REPONSIVE*/
-
+	@media(max-width: 768px){
+		body,#header-top, #header-top-right, #header-bottom,.container, #header-bottom form, #content, #categoriea li, #slider, #slider img{
+			float: none;
+			text-align: center;
+			width: 100%;
+		}
+		#header-top{
+			padding-top: 80px;
+			padding-left: 0px;
+		}
+	}
 /*END-REPONSIVE*/
