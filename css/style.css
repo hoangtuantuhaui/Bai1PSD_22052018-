@@ -325,7 +325,7 @@ section{
 	padding: 10px;
 	border-radius: 8px;
 	position: absolute;
-	bottom: 0px;
+	bottom: 7px;
 	right: 30px;
 }
 
@@ -411,13 +411,9 @@ footer #footer-top textarea{
 	padding-top: 3px;
 	padding-left: 10px;
 }
-
-
-
 footer #footer-bottom{
 	border-top: 3px solid #ccc;
 	background: #ebebeb;
-	
 }
 footer #footer-bottom {
 	height: 60px;
@@ -433,3 +429,14 @@ footer #footer-bottom span{
 	margin-right: 20px;
 }
 /*END-FOOTER*/
+
+/*Reqponsive*/
+@media(max-width: 768px){
+		header #header-top, header #header-top-right, header #header-top-left, header #header-bottom, #header-bottom form, #content, #categoriea li, #slider, #slider img{
+			float: none;
+			text-align: center;
+			width: 100%;
+
+		}
+
+	}
