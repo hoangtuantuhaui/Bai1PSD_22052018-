@@ -8,10 +8,8 @@
 	<title>Web Design</title>
 	<link rel="stylesheet" href="./css/style.css">
 	<!-- <link rel="stylesheet" href="./css/reset.css"> -->
-	<script src="./js/myjavascript.js">
-		
-	</script>
-	<script src="./js/jquery.js"></script>
+
+
 </head>
 <body>
 	<header>
@@ -49,7 +47,7 @@
 					<input type="text" placeholder="Search Our Website">
 					<button type="submit" class ="button-1">SUBMIT</button>
 				</form>
-				<div id="categoriea">
+				<div id="categoriea" class="navbar">
 
 					<ul>
 						<li><a href="" >home</a></li>
@@ -68,8 +66,8 @@
 		<div class="container-section">
 			<!-- SLIDER -->
 			<div id="slider">
-				<img name="slideShow" src="./image/slider1.png" alt="" >
-				<img name="slideSow" style="display: none;" src="./image/slider.png" alt="" stt="1">
+				<img   class="mySlides" src="./image/slider1.png" alt=""  >
+				<img class="mySlides"  src="./image/slider.png" alt="" stt="1" >
 				<ul>
 					<li ><a id="next" href="#"><img src="./image/slide-point.png" alt=""></a></li>
 					<li><img src="./image/slide-point.png" alt=""></li>
@@ -210,5 +208,23 @@
 		
 	</footer>
 	<!-- END FOOTER -->
+	<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+		
+
 </body>
 </html>

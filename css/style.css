@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 }*/
 body{
-	width: 1000px;
+	max-width: 1000px;
 	margin:0px auto;
 	padding:0px
 	border: 0px;
@@ -10,7 +10,7 @@ body{
 		position: relative;
 }
 .container{
-	width: 960px;
+	max-width: 960px;
 	margin: 0px auto;
 	padding: 0px;
 	position: relative;
@@ -193,6 +193,7 @@ section{
 	margin: 0px auto;
 }
 #slider img{
+	max-width: 900px;
 	height: 360px;
 	position: relative;
 }
@@ -431,12 +432,101 @@ footer #footer-bottom span{
 /*END-FOOTER*/
 
 /*Reqponsive*/
-@media(max-width: 768px){
-		header #header-top, header #header-top-right, header #header-top-left, header #header-bottom, #header-bottom form, #content, #categoriea li, #slider, #slider img{
+@media(max-width: 580px){
+		/*header #header-top, header #header-top-right, header #header-top-left, header #header-bottom, #header-bottom form, #content, #categoriea li, #slider, #slider img{
 			float: none;
 			text-align: center;
 			width: 100%;
 
+		}*/
+		.container{
+			width: 100%;
+			float: none;
 		}
-
+		header{
+			width: 100%;
+		}
+		body{
+			position: relative;
+		}
+		#header-top-left{
+			width: 50%;
+			float: left;
+		}
+		#header-top-right{
+			width: 50%;
+			
+		}
+		#header-top-right ul li{
+			font-size: 11px;
+			font-weight: bold;
+		}
+		#header-bottom .image-logo{
+			width: 45%;
+			float: left;
+		}
+		#header-bottom form{
+			width: 55%;
+			position: absolute;
+			left: 300px;
+		}
+		#header-bottom form input[type=text]{
+			width: 150px;
+			height: 20px;
+		}
+		#header-bottom form button[type=submit]{
+			height: 24px;
+		}
+		section{
+			position: absolute;
+			top: 510px;
+		}
+		#section-main{
+			border-top: none;
+		}
+		#section-main h2{
+			position: absolute;
+			left: 0px;
+		}
+		#slider img{
+			width: 50%;
+			padding-left: 0px;
+		}
+		#section-main .box{
+			box-sizing: border-box;
+			width: 50%;
+		}
+		#section-extra{
+			width: 580px;
+		}
+	#categoriea ul li{
+		box-sizing: border-box;
+		width: 100%;
+		padding: 3px;
+		text-align: left;
+	}
+	footer #footer-top-left{
+		box-sizing: border-box;
+		width: 100%;
+		padding: 5px;
+	}
+	footer #footer-top-left .box{
+		width: 100%;
+	}
+	#contact{
+		width: 50%;
+		box-sizing: border-box;
+		height: 150px;
+		position: relative;
+	}
+	#contact-right{
+		position: absolute;
+		left: 0px;
+		bottom: -10px;
+		width: 400px;
+	}
+	footer{
+		position: absolute;
+		top: 2400px;
+	}
 	}
